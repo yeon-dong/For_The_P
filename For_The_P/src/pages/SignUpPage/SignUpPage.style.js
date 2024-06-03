@@ -10,7 +10,9 @@ export const ValidationText = styled.div`
     margin-top: 10%;
     color: black;
     font-size: 24px;
-    font-weight: 700;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 800;
+    font-style: normal;
     margin-bottom: 20px;
 `;
 

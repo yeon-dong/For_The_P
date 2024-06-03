@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const LogoContainer = styled.div`
     display: flex;
@@ -17,16 +18,21 @@ export const Logoimg = styled.div`
 
 export const LoginButton = styled.button`
     font-family: "Gothic A1", sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     font-style: normal;
     margin-top: 40px;
     background-color: white;
     border-color: black;
-    width: 120%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 140%;
+    &:hover{
+        color: #7B68EE;
+    }
 `;
 
-export const SignUpButton = styled.a`
-    margin-top: 20px;
+export const SignUpButton = styled(Link)`
+    margin-top: 24px;
     color: black;
     font-family: "Gothic A1", sans-serif;
     font-weight: 800;

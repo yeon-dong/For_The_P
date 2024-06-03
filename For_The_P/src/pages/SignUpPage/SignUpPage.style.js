@@ -43,17 +43,22 @@ export const StyledButton = styled.button`
 
 export const StyledGoLogin = styled.div`
     display: flex;
-    margin-top: 12px;
+    margin-top: 20px;
     width: 40vw;
     justify-content: space-around;
 `;
 
 export const StyledGoLoginText = styled.div`
-  color: white;
+  color: black;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 `;
 
 export const StyledGoLoginBtn = styled.a`
   text-decoration: none;
-  color: white;
-  font-weight: 700;
+  color: black;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 `;

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage/MainPage";
 import SignUpPage from "./pages/SignUpPage/SignUpPage";
+import LoginPage from "./pages/LoginPage/LoginPage";
 import CalendarPage from "./pages/CalendarPage/CalendarPage";
 import TodoPage from "./pages/TodoPage/TodoPage";
 import SettingPage from "./pages/SettingPage/SettingPage";
@@ -10,11 +11,11 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import './App.css'
 
 function App() {
+
   return (
     <>
       <div className='root-wrap'>
       <BrowserRouter>
-        <Header />
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/signup" element={<SignUpPage />}></Route>

@@ -1,3 +1,4 @@
+import Header from "../../components/Header/Header";
 
 
 function CalendarPage() {
@@ -5,7 +6,7 @@ function CalendarPage() {
 
     return (
       <>
-  
+        <Header/>
       </>
     );
   }

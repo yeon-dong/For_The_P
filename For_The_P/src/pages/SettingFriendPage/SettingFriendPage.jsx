@@ -5,7 +5,7 @@ function SettingFriendPage() {
 
     return (
       <>
-  
+        친구
       </>
     );
   }

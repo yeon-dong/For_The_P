@@ -25,13 +25,21 @@ export const LogoImg = styled.img`
     margin-left: 20px;
     max-height: 60px;
     max-weight: 118px;
+    @media (max-width: 800px) {
+        height: 40px;
+        width: 40px;
+    }
 `;
 
 export const UserImg = styled.img`
     margin-top: 4px;
     margin-right: 20px;
     max-height: 56px;
-    max-weight: 56px;
+    max-width: 56px;
+    @media (max-width: 800px) {
+        height: 40px;
+        width: 40px;
+    }
 `;
 
 export const HeaderRightWrap = styled.div`
@@ -56,6 +64,14 @@ export const HeaderTodo = styled.div`
     &:hover{
         border-color: #0E6973;
     }
+    @media (max-width: 800px) {
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 10px;
+        width:64px;
+    }
 `;
 
 export const HeaderCalendar = styled.div`
@@ -72,6 +88,14 @@ export const HeaderCalendar = styled.div`
     &:hover{
         border-color: #0E6973;
     }
+    @media (max-width: 800px) {
+        padding-right: 4px;
+        padding-left: 4px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 10px;
+        width:64px;
+    }
 `;
 
 export const HeaderText = styled.div`
@@ -85,6 +109,10 @@ export const HeaderText = styled.div`
     transition: color 0.5s;
     &:hover{
         color: #0E6973;
+    }
+    @media (max-width: 800px) {
+        font-size : 28px;
+        text-align:center;
     }
 `;
 

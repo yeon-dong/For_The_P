@@ -16,6 +16,11 @@ export const Logoimg = styled.div`
     align-items: center;
 `;
 
+export const Logoimage = styled.img`
+    max-width:288px;
+    max-height: 288px;
+`;
+
 export const LoginButton = styled.button`
     font-family: "Gothic A1", sans-serif;
     font-weight: 500;

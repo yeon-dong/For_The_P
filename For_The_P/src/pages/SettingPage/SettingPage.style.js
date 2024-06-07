@@ -36,7 +36,7 @@ export const SettingLink = styled(Link)`
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: white;
-    border: 4px solid black;
+    border: 4px solid ${(props) => (props.$color)};
     border-radius: 12px;
     margin-bottom:4px;
     width: 600px;
@@ -57,10 +57,19 @@ export const SettingLinkText = styled.div`
     font-weight: 700;
     font-style: normal;
     font-size : 32px;
-    color: black;
+    color: ${(props) => (props.$color)};
     margin-left: 10px;
     margin-top: 4px;
     @media (max-width: 800px) {
         font-size : 16px;
 }
+`;
+
+export const Footer = styled.div`
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;

@@ -1,5 +1,5 @@
 import Header from "../../components/Header/Header";
-import { SettingContainer, SettingText, UserIMG, UserID, SettingLink, SettingLinkText } from "./SettingPage.style";
+import { SettingContainer, SettingText, UserIMG, UserID, SettingLink, SettingLinkText, Footer } from "./SettingPage.style";
 import {useState, useEffect} from "react";
 
 
@@ -44,9 +44,13 @@ function SettingPage() {
           <SettingText>사용자 설정</SettingText>
           <UserIMG src='user_img.svg' />
           {username && <UserID>{username} #{id}</UserID>}
-          <SettingLink to='/setting/category'><SettingLinkText>일정 카테고리 수정하기</SettingLinkText></SettingLink>
-          <SettingLink to='/setting/friend'><SettingLinkText>친구 목록 보기</SettingLinkText></SettingLink>
+          <SettingLink $color={"black"} to='/setting/category'><SettingLinkText $color={"black"}>일정 카테고리 수정하기</SettingLinkText></SettingLink>
+          <SettingLink $color={"black"} to='/setting/friend'><SettingLinkText $color={"black"}>친구 목록 보기</SettingLinkText></SettingLink>
         </SettingContainer>
+        <Footer>
+          <SettingLink $color={"grey"} to='/' onClick={logout}><SettingLinkText  $color={"grey"}>로그아웃 하기</SettingLinkText></SettingLink>
+          <SettingLink $color={"#A60A33"} to='/'><SettingLinkText $color={"#A60A33"}>탈퇴하기</SettingLinkText></SettingLink>
+        </Footer>
       </>
     );
   }

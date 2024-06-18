@@ -2,7 +2,7 @@ const API_URL = "http://localhost:8080/auth";
 
 export const login = async (loginData) => {
   const requestData = {
-    username: loginData.username,  // 수정: loginData.username으로 변경
+    username: loginData.username,
     password: loginData.password,
   };
 

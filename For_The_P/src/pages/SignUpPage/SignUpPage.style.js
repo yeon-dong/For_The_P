@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const ValidationText = styled.div`
-    margin-top: 10%;
+    margin-top: 4%;
     color: black;
     font-size: 24px;
     font-family: "Gothic A1", sans-serif;
